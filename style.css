@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+.time{
+  position: absolute;
+  top: 20px;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+   
+   
+}
+.home{
+  background-image: url("https://wallpapercave.com/wp/wp3210597.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#fb{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#link{
+    margin:10px;
+    border-radius: 3px;
+    background-color: rgb(253, 213, 213);
+    border: 2px solid grey;
+    cursor: pointer;
+    padding:5px;
+    margin:15px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 80px;
+    color:rgb(112, 9, 9);
+}
+.rank{
+  float:right;
+  visibility:hidden;
+   position: relative;
+    cursor: pointer;
+    border: 0;
+    text-align: center;
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+    border-radius: 5px;
+  }
+.time {
+  left: 200px;
+}
+
+.back{
+ position: absolute;
+  visibility: hidden;
+  align-content: flex-end;
+}
+body {
+  background-color: #0095dd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+h4{
+  text-align: center;
+}
+
+.indexh1 {
+  font-size: 45px;
+  text-align: center;
+  color: #fff;
+}
+
+canvas {
+  background: #f0f0f0;
+  display: block;
+  border-radius: 5px;
+  border:10px solid #004478;
+}
+
+.btn {
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  text-align: center;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+input[type=text]{
+  width: 200%;
+  padding: 12px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+.btn:focus {
+  outline: 0;
+}
+
+.btn:hover {
+  background: #222;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.rules-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.rules {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #333;
+  color: #fff;
+  min-height: 100vh;
+  width: 400px;
+  padding: 20px;
+  line-height: 1.5;
+  transform: translateX(-400px);
+  transition: transform 1s ease-in-out;
+}
+
+.rules.show {
+  transform: translateX(0);
+}

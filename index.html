@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Breakout!</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <h1 class="indexh1">Breakout!</h1>
+        <h3 id="TIME">Time 00:00</h3>
+        
+    <button id="rules-btn" class="btn rules-btn">Show Rules</button>
+    <button id="start-btn" class="btn start-btn" onclick="startStop()">Play</button><br>
+    <form action="player2.php">
+    <button id="show" class="rank" >Show Rank</button>
+    <input type="hidden" id="btnClickedValue3" name="btnClickedValue3" value="" />
+    <input type="hidden" id="btnClickedValue" name="btnClickedValue" value="" />
+    <input type="hidden" id="btnClickedValue2" name="btnClickedValue2" value="" />
+  </form>
+    <div id="rules" class="rules">
+      <h2>How To Play:</h2>
+      <p>
+        Use your right and left keys to move the paddle to bounce the ball up
+        and break the blocks.
+      </p>
+      <p>If you miss the ball, your score and the blocks will reset.</p>
+      <button id="close-btn" class="btn">Close</button>
+    </div>
+
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>
